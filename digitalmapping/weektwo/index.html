@@ -5,9 +5,8 @@
 
 <style type="text/css">
 p { text-align: left; }
+
 </style>
-
-
 	<meta charset="utf-8">
 	<title>Week 2 - Everything is Physical: The Art of Digital Mapping</title>
 	<meta name="description" content="Spring 2016 NYU ITP class by Mimi Onuoha">
@@ -32,7 +31,6 @@ p { text-align: left; }
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
 	</head>
-
 	<body>
 		<div class="reveal">
 			<!-- Any section element inside of this container is displayed as a slide -->
@@ -41,9 +39,8 @@ p { text-align: left; }
 					<script type="text/template">
 					### Week Two 
 				
-
-					- Discuss Reading
-					- Briefly go over assignment 
+					- Go over assignment
+					- Discuss reading 
 					- Talk about tiles 
 					- Talk about geographic data: types, where to find it, etc
 					- Add data to maps 
@@ -53,15 +50,32 @@ p { text-align: left; }
 
 				<section data-markdown> 
 					<script type="text/template">
-					### READING LAST WEEK: 
-					####"Mappings", Jeremy W. Craven  
+					### Assignment  
 					</script>
 				</section>
 
 				<section data-markdown> 
 					<script type="text/template">
+					### READING LAST WEEK: 
+					####"Mappings", Jeremy W. Crampton 
+
+					</script>
+				</section>
+
+				<section data-markdown> 
+					<script type="text/template">
+					> Mapping is an active process of intervention in the world...(425)
+					> Instead of points, lines, and polygons, which is not a particularly everyday understanding of the world, perhaps maps should involve a more experiential aspect of our lives (maps as practices)(428)?
+					> If a map has no particular design, is the question of the "look of maps" solved or only deepened(431)?
+					> Indeed, the likelihood of an area being well mapped correlates with the area being well resourced (not socially deprived) (434)
+					</script>
+				</section>
+
+
+				<section data-markdown> 
+					<script type="text/template">
 				## Tiles Tiles Tiles 
-				We are going to jump straight to the excellent slides from [Maptime](http://maptime.io/anatomy-of-a-web-map/#46) slides for this. 
+				We are going to jump straight to these slides from [Maptime](http://maptime.io/anatomy-of-a-web-map/#46) for this. 
 					
 					</script>
 				</section>
@@ -71,6 +85,17 @@ p { text-align: left; }
 					## Tiles are (mostly) raster data
 
 					</br>You can use tiles from providers like OSM, CartoDB, Mapbox, Stamen, etc. You can also design your own.  
+					</script>
+				</section>
+
+				<section data-markdown data-background="/digitalmapping/weektwo/img/zoomlevels.png.png">
+					<script type="text/template"></script>
+				</section>
+
+
+				<section data-markdown> 
+					<script type="text/template">
+					## USEFUL: Think of web maps in terms of layers.				
 					</script>
 				</section>
 
@@ -89,15 +114,14 @@ p { text-align: left; }
 					</script>
 				</section>
 				<section data-markdown data-background="/digitalmapping/weektwo/img/basemap-datalayers-06.png">
-					<script type="text/template">
-
-					</script>
+					<script type="text/template"></script>
 				</section>
 
 
 					<section data-markdown> 
 						<script type="text/template">
 						## Leaflet.js for adding markers and popups 
+						
 
 
 					</script>
@@ -121,7 +145,7 @@ p { text-align: left; }
 
 				<section data-markdown> 
 					<script type="text/template">
-						###GeoJSON [geometries](geojsonlint.com):
+						###GeoJSON [geometries](http://geojsonlint.com):
 
 						- Point
 						- Multipoint
@@ -149,10 +173,10 @@ p { text-align: left; }
 			</br></br>
 			[Natural Earth](http://www.naturalearthdata.com/)  
 			[OpenStreetMap](https://www.openstreetmap.org/#map=5/48.879/11.294)   
-			[Mapzen](https://mapzen.com/data/metro-extracts) (For cities)  
-			[GeoCommons](http://geocommons.com/search.html) (issues around accuracy?)  
+			[OSM data extracts](http://download.geofabrik.de/)
+			[Mapzen](https://mapzen.com/data/metro-extracts) (For city extracts)  
 			[US Census](https://www.census.gov/geo/maps-data/)   
-			[Each US state](https://github.com/johan/world.geo.json/tree/master/countries) (fine for class purposes)		
+			[Easy, accessible geoJSON for all countries and US states/counties](https://github.com/johan/world.geo.json/tree/master/countries) (fine for class purposes)		
 					</script>
 				</section>
 
@@ -168,37 +192,31 @@ p { text-align: left; }
 					ogr2ogr (part of [GDAL](http://www.gdal.org/) suite), [Mapshaper](https://github.com/mbloch/mapshaper) 
 
 					</br></br>
-					We are going to grab shapefile data, change it to geojson, and add it to our Leaflet maps 
-							</script>
+					This is useful for if you find other data that you want to convert to geojson. 							</script>
 						</section>
 
-				<section data-markdown> 
+			<!-- 	<section data-markdown> 
 					<script type="text/template">
 					### Creating your own GeoJSON
 					</br</br> </br>
 
 					##### See GeoJSON spec [here](http://geojson.org/geojson-spec.html) 
 					</script>
-				</section>
+				</section> -->
 				
 				<section data-markdown> 
 					<script type="text/template">
 					### Assignments
 
-					- Reading: Borges & Baudrillard (in that order); this short article on [Google Blur sites](http://www.theatlantic.com/technology/archive/2011/06/15-high-profile-sites-that-google-doesnt-want-you-to-see/240766/#slide5)
-					- Add a geojson layer to your map: 
-						- Using data that you have either gathered from somewhere or created yourself
-						- Add at least one marker, pop-up to your site 
-						- Push your map online to your blog or github.io page and send me the link before Friday 
-
- 
+					- Reading: Borges & Baudrillard (in that order) and this article on [When Google Goes Blind](http://www.atlasobscura.com/articles/investigating-censored-spots-on-google-earth) 
+					- Add some data to your map(s): 
+						- Using geojson data that you have gathered from somewhere 
+						- Add at least one marker to your map
+						- Push your map online and send me the link before 1pm Friday 
 					</script>
 				</section>
 				
-		
-
 					</div>
-
 				</div>
 
 				<script src="lib/js/head.min.js"></script>
