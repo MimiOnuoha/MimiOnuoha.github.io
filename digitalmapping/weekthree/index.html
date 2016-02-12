@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Week 1 - Everything is Physical: The Art of Digital Mapping</title>
+	<title>Week 3 - Everything is Physical: The Art of Digital Mapping</title>
 	<meta name="description" content="Spring 2016 NYU ITP class by Mimi Onuoha">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -33,86 +33,132 @@
 			<div class="slides">
 				<section data-markdown> 
 					<script type="text/template">
-					# Everything is Physical: The Art of Digital Mapping 
-					---
-					**Instructor**: Mimi Onuoha  
-					**Time**: Fridays 3:20 - 5:50 
-					</br>**Contact**: <cgo221@nyu.edu>
-					</br>**Office Hours**: By Appointment
+				## This week:
+
+				- Talk about reading
+				- Go over assignment
+				- Super quick overview of map projections 
+				- More on finding, converting, and working with data for Leaflet
+				- CartoDB
+
 					</script>
 				</section>
 
 				<section data-markdown> 
 					<script type="text/template">
-					## Mimi Onuoha
-					### data || research || mapping 
-					**e**: <cgo221@nyu.edu>
-					</br>**w**:[mimionuoha.com](mimionuoha.com )
-					</br>**t**: [@thistimeitsmimi](twitter.com/thistimeitsmimi)
-					</script>
+					### READINGS LAST WEEK: 
+					####Borges, Baudrillard [Google Blur sites](http://www.theatlantic.com/technology/archive/2011/06/15-high-profile-sites-that-google-doesnt-want-you-to-see/240766/#slide5)
 				</section>
 
 				<section data-markdown> 
 					<script type="text/template">
-					## ...but who are you?
-					name + year + background 
-					</script>
-				</section>
+				## Map Projections 
 
-				<section data-markdown> 
-					<script type="text/template">
-					## Why We Are Here
-					- To learn how to digitally map
-					- To talk about mapping
-					- To talk about why we should talk about mapping
-					- To create digital-ish map-based objects that interrogate space and geographic data
+				These are not immediately going to be relevant to us, but we are talking about them for two reasons:
+					
+				1. They are good to know about, and might at some point be useful. 
+				2. Every normal person (i.e., non-cartographer) in the world seems to use them as the primary way of understanding subjectivity in mapping. And that is all because of [this clip](https://www.youtube.com/watch?v=vVX-PrBRtTY) from the West Wing. 
+
+					
 					</script>
 				</section>
 
 
 				<section data-markdown> 
 					<script type="text/template">
-					## But Why Mapping?
-					Why should we care about maps? Why are you here? [discuss]
+					## Projections 101:
+
+					- The world is curved, screens and papers are flat.
+					- Map projections are math functions that define how to best to transform spherical locations into 2D positionings.
+					- Some distortion will ALWAYS occur. So the question is: what gets distorted?    
+				
 					</script>
 				</section>
 
-				<section>
-					<section id="fragments">
-						<h2>Maps Are...</h2>
-						<p class="fragment">Archives for geo-referenced data</p>
-						<p><span class="fragment">Pictures of the spatial order of the world</span> 
-							<p><span class="fragment">Tools for investigating spatial relations</span> </p>
-							<p><span class="fragment">Objects of aesthetic and historical interest</span></p>
-							<p><span class="fragment">Unsurprisingly likable</span>
-							</p>
-						</section>
-					</section>
+				<section data-background="/digitalmapping/weektwo/img/spheretoflat.png.png">
+				</section>
 
-					<section>
-					<section id="fragments">
-						<h2>Maps Also...</h2>
-						<p class="fragment">Convey limited versions of the truth</p>
-						<p><span class="fragment">Record that which is impossible to record</span> 
-							<p><span class="fragment"> Both represent and produce the world </span> </p>
-							<p><span class="fragment">Are a form of power-knowledge</span></p>
-							</section>
-					</section>
+				<section data-markdown> 
+					<script type="text/template">
+					## Projections 101:
 
+					- Map projections are math functions that define how to best to transform spherical locations into 2D positionings.
+					- Some distortion will ALWAYS occur. So the question is: what gets distorted?    
+				
+					</script>
+				</section>
+
+				<section data-background="/digitalmapping/weektwo/img/different_projections_wikipedia.png">
+				</section>
+
+				<section data-background="/digitalmapping/weektwo/img/map_projections_xkcd.png">
+				</section>
+
+				<section data-markdown> 
+					<script type="text/template">
+					## What you need to know:
+					 
+					- Most web maps use some version of Web Mercator
+					- D3.js has the best support for different projections				
+					</script>
+				</section>
+
+				<section data-markdown> 
+					<script type="text/template">
+					## Last week:
+					- Web mapping + markers and popups
+					- Finding and adding geoJSON data 
+
+					</script>
+				</section>
+
+				<section data-markdown> 
+					<script type="text/template">
+					## More on Data
+					- Geodata (geoJSON, shapefiles) versus data (CSV, JSON)
+					- How do you get data in the format that you need it in? 
+
+					</script>
+				</section>
+
+
+				<section data-markdown> 
+					<script type="text/template">
+					## Option One (for geodata): Find and convert it 
+					Get it from somewhere:
+					 
+					- [Natural Earth](http://www.naturalearthdata.com/)  
+					- [OpenStreetMap](https://www.openstreetmap.org/#map=5/48.879/11.294)   
+					- [Mapzen](https://mapzen.com/data/metro-extracts) (For cities)   
+					- [US Census](https://www.census.gov/geo/maps-data/)   
+					- [Each US state](https://github.com/johan/world.geo.json/tree/master/countries) 
+					- [Country Geo-boundaries](http://data.okfn.org/data/datasets/geo-boundaries-world-110m#data)
+
+					And change it using tools:   
+
+					- [Mapshaper](http://www.mapshaper.org/)
+					- [Ogre](https://ogre.adc4gis.com/)
+					</script>
+				</section>
 
 					<section data-markdown> 
 						<script type="text/template">
-						## Course Information 
+						## Option One continued: 
+					For more complicated changes/adjustments, use command line tools:
 
-						### [https://github.com/MimiOnuoha/art-of-digital-mapping-ITP2016](https://github.com/MimiOnuoha/art-of-digital-mapping-ITP2016)
-						^ your new best friend!  
+					- [Mapshaper](https://github.com/mbloch/mapshaper/wiki/Introduction-to-the-Command-Line-Tool)
+					- [ogr2ogr](http://www.gdal.org/ogr2ogr.html)
 					</script>
 				</section>
 
 				<section data-markdown> 
 					<script type="text/template">
-					## Caveat 1: 
-					### There is a lot to say about mapping. 
+					## Option Two: use a plugin
+
+					</br>
+					[Leaflet Omnivore](https://github.com/mapbox/leaflet-omnivore) will change your mapping life. 
+
+					</br> See examples in week3 folder to easily load CSVs. 
 
 					</script>
 				</section>
@@ -120,106 +166,33 @@
 
 				<section data-markdown> 
 					<script type="text/template">
-					## Caveat 2: 
-					###Seven weeks is a sprint, not a marathon.
+				## Option Three: Create it 
+
+				- Data formats are just formats. All you have to do is make sure your data fit the standards of the format. 
+
+				- See: Geojson.io
 					</script>
 				</section>
 
 				<section data-markdown> 
 					<script type="text/template">
-					## The Goal: 
-					### For you to leave understanding the language,  tools, and failings of digital mapping.
+				## Option Four: Add to existing data 
+
+				- Geojson properties field is a chance for you to add other sorts of data. CSV columns can hold other data
+				- If you are trying to map non-geospatial data (say, unemployment rates of states), you need a geoson file with both pieces of information. 
+
+				</br></br>See example in week3 folder 
+
 					</script>
 				</section>
-
+			
 				<section data-markdown> 
 					<script type="text/template">
-					## A Very Brief and Arbitrary History of Mapping:
-
-					Or, the stuff people expect you to know when they hear you took a digital mapping class:
-					
+				## CartoDB
 					</script>
-				</section>
-
-				<section data-background="/digitalmapping/weekone/img/T-Omap_zonalmap_Medievaltimes.jpg">
-					<h5 class = "black" "fragment">1400 - 1600: Mapping Revolution (printing press)</h5>
-				</section>
-				<section data-background="/digitalmapping/weekone/img/GerardusMercator_1569.png">
-					<h5 class="black"> 1569 - First world map (Gerardus Mercator)</h5> 
-				</section>
-				<section data-background="/digitalmapping/weekone/img/AbrahamOrteliusFirstModernAtlas1570.jpg">
-					<h5 class="black">1570 - First modern atlas </h5> 
-				</section>
-				<section data-background="/digitalmapping/weekone/img/scott_joseph_apostles.jpg">
-					<h5 class = "black">1600 - 1900: Maps become more prevalent, factual, recognizable to us</h5> 
-				</section>
-				<section data-background="/digitalmapping/weekone/img/Snow-cholera-map-1854.jpg">
-					<h5 class = "black">1854: John Snow cholera maps</h5> 
-				</section>
-				<section data-background="/digitalmapping/weekone/img/native_wingrass63.jpg">
-					<h5 class = "black">1960s: Geographical Information Systems emerge </h5>
-				</section>
-				<section data-background="/digitalmapping/weekone/img/TIGER_1990_uscensus.jpg">
-					<h5 class = "black">1990: US Census TIGER map</h5> 
-				</section>
-				<section data-background="/digitalmapping/weekone/img/world_according_to_americans_critcartslide.png">
-					<h5 class = "black">1990s: Field of Critical Cartography begins to emerge </h5> 
-				</section>
-				<section data-background="/digitalmapping/weekone/img/mapquestgasmapscreenshot.gif">
-					<h5 class = "black">1996: Mapquest created</h5> 
-				</section>
-				<section data-background="/digitalmapping/weekone/img/Googlemaps.png">
-					<h5 class = "black">2005: Google Maps revolutionizes web mapping</h5> 
-				</section>
-
-				<section>
-					<h2>NOW: 
-					</h2>
-					<h3>All the web maps, all the people making them</h3> 
 				</section>
 				
-				<section>			
-					<h3>Web maps != digital maps</h3>
-					<h5> Digital = involves computer </h5>
-					<h5> Web = accessible by the internet </h5>
-				</section>
-
-				<section data-markdown data-background="/digitalmapping/weekone/img/basemap-datalayers-01.png">
-					<script type="text/template">
-
-					</script>
-				</section>
-				<section data-markdown data-background="/digitalmapping/weekone/img/basemap-datalayers-06.png">
-					<script type="text/template">
-
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-					
-					We are going to create a simple map and serve it locally, then push it online using github.io.
-
-					- Download [Sublime Text 2](http://www.sublimetext.com/2) or any text editor or IDE 
-					- Download or clone index.html file from class repo
-					
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-					## Assignments
-
-						- Go through [this](http://maptime.io/anatomy-of-a-web-map/#0) 
-						- Create a map. 
-							- Change the [location](http://www.latlong.net/)
-							- Use Leaflet.js to render, load tiles from [Stamen](http://maps.stamen.com/#toner-lite/12/37.7707/-122.3781) 
-							- Push map online to your github.io page and send me the link 	
-							</script>
-						</section>
-
 						
-
 					</div>
 
 				</div>
