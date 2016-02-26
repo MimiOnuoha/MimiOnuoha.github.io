@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Week 5 - Everything is Physical: The Art of Digital Mapping</title>
+	<meta name="description" content="Spring 2016 NYU ITP class by Mimi Onuoha">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/night.css" id="theme">
+	<!-- Code syntax highlighting -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+	<!-- Custom stylesheet -->
+	<link rel="stylesheet" href="css/extra.css">		
+	<!-- Printing and PDF exports -->
+	<script>
+	var link = document.createElement( 'link' );
+	link.rel = 'stylesheet';
+	link.type = 'text/css';
+	link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+	document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-markdown> 
+					<script type="text/template">
+				## This week:
+
+				- Talk about reading
+				- Go over assignment from last week
+				- Talk about final projects
+				- D3, Turf.js, Mapbox plugins, Animation, etc. 
+
+					</script>
+				</section>
+
+				<section data-markdown> 
+					<script type="text/template">
+				### READINGS LAST WEEK: 
+				####[How A Map is Like an Op-Ed](http://www.citylab.com/tech/2013/04/how-map-op-ed/5143/)
+				#### [The Tehran Conference](https://history.state.gov/milestones/1937-1945/tehran-conf)
+					</script>
+				</section>
+
+				<section data-markdown> 
+					<script type="text/template">
+
+				### READINGS LAST WEEK: 
+				####Trevor Paglen - "Experimental Geography: From Cultural Production to the Production of Space"  
+
+					</script>
+				</section>
+
+				<section data-markdown> 
+					<script type="text/template">
+				## Last week:
+				- Python modules 
+				- Mapbox Studio for styling data and creating custom tiles			
+					</script>
+				</section>
+
+
+				<section data-markdown> 
+					<script type="text/template">
+				## Next week:
+				- Guest workshop - Ann Chen (balloon mapping)
+				- Guest lecture/Q&A -  Josh Begley 
+				- Show up on time! Be prepared to spend some time outside. 
+				
+					</script>
+				</section>
+
+				<section data-markdown>
+					## Final Projects (March 11 )
+					> Create map (or map-based objects) that function as art objects and challenge common conventions or understandings of the capabilities of maps.
+
+				</section>
+
+				<section data-markdown> 
+					<script type="text/template">
+					## What that means:
+
+					#### Make something that interrogates geographic space and utilizes the concepts, topics, tools, or methodology that we have been working with.
+					</br>
+					#### Think about why you are mapping something; what your conceptual interests are. 
+					</br>
+					#### Less about what you *can* do. More about what you choose to do, and how. 
+					</script>
+				</section>
+
+			
+				<section data-markdown> 
+					<script type="text/template">
+					## You can:
+
+					- Work alone or in pairs
+					- Create something web-based, digital, or physical (as long as it incorporates the things or skills we have been working with)
+					- Combine with a midterm/project from another class 
+
+					</script>
+				</section>
+
+				<section data-markdown> 
+					<script type="text/template">
+					## Examples/Inspiration
+
+					See dropbox link [here](https://www.dropbox.com/s/ls269cdpsnw3dan/inspiration.pdf?dl=0). 
+
+					And [this](https://t.co/67v1QEctyA)		
+					</script>
+				</section>
+
+				<section data-markdown> 
+					<script type="text/template">
+					## The Final Presentation:
+
+					- Guest critics (potentially museum studies students)
+					- 5 minutes each to present, 3 minutes for questions
+					- Tell us about your project, why you chose it, what you did to make it
+					- Office hours next week: Wednesday afternoon 
+
+					</script>
+				</section>
+
+				<section data-markdown> 
+					<script type="text/template">
+				## Today
+				- Broad overview of some topics/tools that might be useful for final project. Feel free to explore to the degree that you are interested. 
+				- Not extremely in-depth, but a good starting place. 
+				- Not intended to teach you to use everything, but expose you to more things so you can incorporate or focus on something for final project.
+					</script>
+				</section>
+
+
+				<section data-markdown> 
+					<script type="text/template">
+					## D3
+					- <strong>[d3.js](https://github.com/mbostock/d3/wiki): Javascript library for manipulating DOM elements based on data. The preeminent library for creating visualizations on the web. </strong>
+					- Properly understanding mapping with D3 means understanding lots of other things: 
+						- HTML 
+						- CSS
+						- SVG (vector-based graphics for the web)
+						- Jquery bindings and chaining 
+						- Extras: Topojson, NPM, etc.  
+					- Good news is that you already understand 
+
+					</script>
+				</section>
+
+
+				<section data-markdown> 
+					<script type="text/template">
+				## Why use D3?
+				#### Because you can do really cool things with it that you could not do with slippy maps.
+				- [Not just limited to tiles ](https://www.jasondavies.com/maps/countries-by-area/)
+				- [Access to more map projections](https://www.dashingd3js.com/na-map-projections)
+				- [Interactivity](https://bl.ocks.org/mbostock/3795040)
+				- [Transitions + animations](https://bl.ocks.org/mbostock/6242308)
+				- [Cool things](https://bl.ocks.org/mbostock/9231621)
+				- Also plays [nicely]((http://bl.ocks.org/andrewxhill/4448106) with [CartoDB data](http://blog.cartodb.com/cartodb-makes-d3-maps-a-breeze/)
+
+				D3 is really cool. 
+
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+				## Learning curve is steep. 
+				But there are lots of tutorials! 
+
+				See basic-d3-example.html in week5 folder 
+
+					</script>
+				</section>
+
+		
+				<section data-markdown> 
+				<script type="text/template">
+				## Best D3 Mapping Tutorials 
+				 - Mike Bostock - [Lets Make A Map](https://bost.ocks.org/mike/map/) 
+				 - Maptime Boston - [Mapping with D3: A friendly introduction](http://maptimeboston.github.io/d3-maptime/#/)
+				 - Maptime Amsterdam - [Animated Borders Map](https://github.com/maptime-ams/animated-borders-d3js)
+				 - Maptime Seattle - [D3 Mapping](http://maptimesea.github.io/2015/01/07/d3-mapping.html)
+			 
+				</script>
+			</section>
+			
+			<section data-markdown>
+				<script type="text/template">
+			## You can also use D3 and Leaflet together
+			Leaflet for rendering tiles/basemap, D3 for drawing SVG shapes on top of the map easily. See examples [here](https://bost.ocks.org/mike/leaflet/) and [here](http://zevross.com/blog/2014/09/30/use-the-amazing-d3-library-to-animate-a-path-on-a-leaflet-map/)
+				</script>
+			</section>
+
+			<section data-markdown>
+				<script type="text/template">
+			## Mapbox Plugins for Leaflet 
+
+			Useful plugins for extending your maps. To get these to work, just add the script source link to the `<head>` of your document.
+			 
+			- [MarkerCluster](https://www.mapbox.com/mapbox.js/example/v1.0.0/leaflet-markercluster/)
+			- [Centering Markers](https://www.mapbox.com/mapbox.js/example/v1.0.0/centering-markers/) 
+			- [Leaflet Locate ](https://www.mapbox.com/mapbox.js/example/v1.0.0/leaflet-locatecontrol/)
+			- [Leaflet Fullscreen](https://www.mapbox.com/mapbox.js/example/v1.0.0/leaflet-fullscreen/)		 
+
+			####Browse the full list [here](https://www.mapbox.com/mapbox.js/plugins/). 
+				
+				</script>
+			</section>
+
+			<section data-markdown>
+				<script type="text/template">	
+			## Turf.js 
+			For doing spatial analysis on data. 
+
+			See turf-basic-example.html in weekfive folder 
+				</script>
+			</section>
+
+			<section data-markdown>
+				<script type="text/template">	
+			## Animating Paths
+
+			See animation-example.html in weekfive folder
+				</script>
+			</section>
+	
+			<section data-markdown>
+				<script type="text/template">	
+			## Loading live data 
+
+			</br>
+			[Mapbox example](https://www.mapbox.com/mapbox.js/example/v1.0.0/live-data-marker/)
+				</script>
+			</section>
+			
+			<section data-markdown>
+				<script type="text/template">	
+			## Assignments
+
+			- Start thinking about and working on your final projects! Schedule office hours with me if you want to talk about ideas. 
+				- Check out some of [Josh Begley's](http://joshbegley.com/) [work](http://nymag.com/daily/intelligencer/2013/01/josh-begley-interview-on-dronestream-twitter-account.html#). Next week he'll be talking to us about how space figures into his work, be prepared with questions. 
+				</script>
+			</section>
+
+
+
+
+						
+					</div>
+
+				</div>
+
+				<script src="lib/js/head.min.js"></script>
+				<script src="js/reveal.js"></script>
+
+				<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+				transition: 'none', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/zoom-js/zoom.js', async: true },
+				{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+			</script>
+
+		</body>
+		</html>
