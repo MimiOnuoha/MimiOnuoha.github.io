@@ -352,43 +352,43 @@
       var season = seasonChoice.options[seasonChoice.selectedIndex].value;
       // var season2 = "2010-2011"
 
-    function updatePie(season){
-      var svg2 = d3.select("body").selectAll(".pie")
-        .data(data3)
-      .enter().append("svg")
-        .attr("class", "pie")
-        .attr("width", radius * 2)
-        .attr("height", radius * 2)
-      .append("g")
-        .attr("transform", "translate(" + radius + "," + radius + ")");
+    // function updatePie(season){
+    //   var svg2 = d3.select("body").selectAll(".pie")
+    //     .data(data3)
+    //   .enter().append("svg")
+    //     .attr("class", "pie")
+    //     .attr("width", radius * 2)
+    //     .attr("height", radius * 2)
+    //   .append("g")
+    //     .attr("transform", "translate(" + radius + "," + radius + ")");
 
-        console.log(svg2);
+    //     console.log(svg2);
    
-       svg2.selectAll(".arc")
-        .data(function(d) { 
-          console.log(".arc", season);
-          return pie(d.values[0][season].numbers);
-          // return pie(d); 
-        })
-      .enter().append("path")
-        .attr("class", "arc")
-        .attr("d", arc)
-        .style("fill", function(d) { 
-          return color(d.data.name); })
+    //    svg2.selectAll(".arc")
+    //     .data(function(d) { 
+    //       console.log(".arc", season);
+    //       return pie(d.values[0][season].numbers);
+    //       // return pie(d); 
+    //     })
+    //   .enter().append("path")
+    //     .attr("class", "arc")
+    //     .attr("d", arc)
+    //     .style("fill", function(d) { 
+    //       return color(d.data.name); })
 
-      svg2.append("text")
-          .attr("dy", ".35em")
-          .style("text-anchor", "middle")
-          .attr("font-family", "Raleway")
-          .text(function(d) { 
-            // console.log(d.key);
-            return d.key; });
-          };
+    //   svg2.append("text")
+    //       .attr("dy", ".35em")
+    //       .style("text-anchor", "middle")
+    //       .attr("font-family", "Raleway")
+    //       .text(function(d) { 
+    //         // console.log(d.key);
+    //         return d.key; });
+    //       };
           
 
 
-      console.log(season);
-      updatePie(season);
+    //   console.log(season);
+      // updatePie(season);
 
    // ------  BAR CHART TRANSITIONS ---------------
       //transition to "percent" presentation
