@@ -28,20 +28,35 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <div class="row">
+ 
       <div class="one-half column" style="margin-top: 15%">
-        <h4> Off-Broadway/Non-Profit Theater Companies </h4>
+          <h4> Non-Profit Theater Companies </h4>
+          <p class= "year"> 2014 - 2015 </p>
         <div id = "chart1"></div>
-        <div id = "percent_switcher">
-    <!--       <form >
+      </div>
+      <div class = "one column" style = "margin-top: 20%">
+         <form >
             <label><input type="radio" name="mode" value="bypercent" > Percent</label>
             <label><input type="radio" name="mode" value="bycount" checked> Number of Actors</label>
-          </form> -->
-        </div>
-      </div>
-
-      <div class="one-half column" style="margin-top: 25%">
-        <div id="pies"></div>
+          </form>
+      </div> 
+      <div class = "one column" style = "margin-top: 30%">
         <div id = "textspace"></div>
+      </div>
+    </div>
+    <div class = "row">
+     <div class="one-half column" style = "margin-top: 1%">
+      <h4> Broadway Shows </h4>
+      <p class= "year"> 2014 - 2015 </p>
+      <div id = "chart2"></div>
+    </div>
+  </div>
+
+
+  <!-- </div> -->
+<!--     <div class ="row">
+      <div class="one-half column">
+        <div id="pies"></div>
         <p>
           <select id="selectField">
             <option value="2007-2008">2007-2008</option>
@@ -54,7 +69,7 @@
 
       </div>
     </div>
-  </div>
+  </div> -->
 
   <script>
 
@@ -62,7 +77,8 @@
 
     var queue = d3_queue.queue();
     
-    var margin = {top: 50, right: 120, bottom: 50, left: 150},
+    // var margin = {top: 100, right: 100, bottom: 100, left: 100},
+    var margin = {top: 10, right: 110, bottom: 50, left: 150},
         width = 800 - margin.left - margin.right,
         height = 500 - margin.top - margin.bottom;
 
@@ -86,6 +102,9 @@
       });
 
     var color = d3.scale.ordinal()
+      .range(['#4f81bd','#c0504d','#9bbb59','#8064a2','#4bacc6']);
+
+    var broadwayColor = d3.scale.ordinal()
       .range(['#d73027','#fc8d59','#91bfdb','#4575b4','#fee090']);
 
     var yAxis = d3.svg.axis()
@@ -103,6 +122,24 @@
       .outerTickSize(0)
       .tickPadding(10);
 
+
+    var broadwayYAxis = d3.svg.axis()
+      .scale(y)
+      .orient("left")
+      .innerTickSize(-width)
+      .outerTickSize(0)
+      .tickPadding(10);
+
+    var broadwayXAxis = d3.svg.axis()
+      .scale(x)
+      .orient("bottom")
+      // .tickFormat(d3.format(".0%")) // **
+      .innerTickSize(-height)
+      .outerTickSize(0)
+      .tickPadding(10);
+
+
+
    // --------- TOOLTIPS ------------------------------------
     var tip = d3.tip()
       .attr('class', 'd3-tip')
@@ -117,7 +154,14 @@
         return "<span style='color:white'> <STRONG>" + (d.y1- d.y0) + " actors </strong></span> (" + Math.floor((d.yp1 - d.yp0) * 100) + "%)";
       })
 
-    var svg = d3.select("#chart1").append("svg")
+    var barSvg = d3.select("#chart1").append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+      .attr("font-family", "Raleway")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    var broadwayBarSvg = d3.select("#chart2").append("svg")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
       .append("g")
@@ -125,26 +169,25 @@
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 
-    svg.call(tip);
-    svg.call(percentTip);
 
-   // --------- DATA LOADING + everything else -----------------------
+
+    barSvg.call(tip);
+    barSvg.call(percentTip);
+
+    broadwayBarSvg.call(tip);
+    broadwayBarSvg.call(percentTip);
+
+
+// --------- DATA LOADING -----------------------
     queue
       .defer(d3.csv, "data/offbroadway.csv") // Individual theaters
-      .defer(d3.csv, "data/tidy_grouped.csv") // Grouped data, all years 
+      .defer(d3.csv, "data/2014-15_offbroadway.csv") // Grouped data, all years 
       .defer(d3.csv, "data/shows.csv")
+      .defer(d3.csv, "data/2014-15_broadway.csv")
       .await(analyze);
 
-    function analyze(error, individualData, groupedData, showData) {
+    function analyze(error, individualData, groupedData, showData, broadwayData) {
       if (error) throw error;
-
-      function collapseArrayToObject(ethnicities) {
-        var acc = {};
-        ethnicities.forEach(function (ethnicity){
-          acc[ethnicity["ethnicity"]] = +ethnicity["actors"]; 
-        })
-        return acc;
-      }
 
       // Individual Theater Data (for pie charts)
       var individualTheatres = d3.nest()
@@ -164,9 +207,19 @@
       })
 
       // Summed data for all theaters, all years (for main bar chart)
+
+      var broadway = d3.nest()
+        .key(function (d) {return d["show"]; })
+        .entries(broadwayData);
+
+      var shows = d3.nest()
+        .key(function (d) { return d["theater"]; })
+        .entries(showData)
+
+      // Summing process for Off-broadway 
       var grouped = d3.nest()
-      .key(function(d) { return d["theater"]; })
-      .entries(groupedData);
+        .key(function(d) { return d["theater"]; })
+        .entries(groupedData);
 
       var summed = grouped.map(function(group) {
         var row = {};
@@ -179,6 +232,8 @@
       }); 
 
       color.domain(d3.keys(summed[0]).filter(function(key) { return key !== "theater"; }));
+
+      console.log("color.domain", color.domain())
 
       summed.forEach(function(d) {
         var y0 = 0;
@@ -193,6 +248,49 @@
         d.total = d.numbers[d.numbers.length - 1].y1;
       });
 
+
+      // Exact same process but now for broadway :-/
+      var broadwayGrouped = d3.nest()
+        .key(function(d) { return d["show"]; })
+        .entries(broadwayData);
+
+      var broadwaySummed = broadwayGrouped.map(function(group) {
+        var row = {};
+        row["show"] = group["key"];
+        for (var i=0; i<group["values"].length; i++) {
+          var value = group["values"][i];
+          row[value["ethnicity"]] = +value["actors"];
+        }
+        return row;
+      }); 
+
+      broadwayColor.domain(d3.keys(broadwaySummed[0]).filter(function(key) { return key !== "show"; }));
+
+      console.log("broadwayColor", broadwayColor.domain())
+
+      broadwaySummed.forEach(function(d) {
+        var y0 = 0;
+        d.numbers = broadwayColor.domain().map(function(name) { 
+          var theatreobj =  {name: name, amount: +d[name], y0: y0, yp0: y0 };
+          y0 += +d[name];
+          theatreobj.y1 = y0;
+          theatreobj.yp1 = y0;
+          return theatreobj;
+        });
+        d.numbers.forEach(function(d) { d.yp0 /= y0; d.yp1 /= y0; });
+        d.total = d.numbers[d.numbers.length - 1].y1;
+      });
+
+
+      // Helper functions for transforming data 
+      function collapseArrayToObject(ethnicities) {
+        var acc = {};
+        ethnicities.forEach(function (ethnicity){
+          acc[ethnicity["ethnicity"]] = +ethnicity["actors"]; 
+        })
+        return acc;
+      }
+
       function transformData(data) {
         var newObj = {};
         for (var i =0; i<data.length; i++) {
@@ -206,18 +304,17 @@
         return newObj;
       }
 
-      var shows = d3.nest()
-      .key(function (d) { return d["theater"]; })
-      .entries(showData)
-
       data1 = summed;
       data2 = [transformData(individualTheatres)];
       data3 = individualTheatres;
       data4 = shows;
+      data5 = broadwaySummed;
 
-      // console.log(data4);
+      console.log("Broadway Data", data5);
+      console.log("Offbroadway Chart", data1);
 
       data1.sort(function(a, b) { return b.total - a.total; });
+      data5.sort(function(a, b) { return b.total - a.total; });
 
       // ------- SHOWING TEXT ------------------
 
@@ -228,7 +325,8 @@
 
         // textHolder.append("text")
         //   .style("fill","black")
-        //   .style("font-size", "40px")
+        //   .style("font-size", "3em")
+        //   .style("font-family", "Raleway")
         //   .attr("dy", ".35em")
         //   .data(data4)
         //   .attr("dy", ".35em")
@@ -245,23 +343,25 @@
 
 
 
-       // --------- BAR CHART ------------------------------------
+// --------- OFF-BROADWAY BAR CHART ----------------------
       y.domain(data1.map(function(d) { return d.theater; }));
       x.domain([0, d3.max(data1, function(d) { return d.total; })]);
 
       // X-axis
-      svg.append("g")
+      barSvg.append("g")
         .attr("class", "x axis")
         .attr("transform", "translate(0," + height + ")")
         .call(xAxis)
         .append("text")
         .text("Number of Actors")
-        .attr("x", width/2 -40)
+        .attr("x", width/2 -30)
         .attr("y", 40)
-        .attr("font-family", "Raleway");
+        .attr("font-family", "Raleway")
+        .style("font-size", 12)
+      
 
       // Y-axis
-      svg.append("g")
+      barSvg.append("g")
         .attr("class", "y axis")
         .call(yAxis)
         .append("text")
@@ -270,14 +370,15 @@
         .attr("x", -120)
         .attr("dy", ".71em")
         .style("text-anchor", "end")
-        .text("Theaters")
+        // .text("Theaters")
+        .style("font-size", 12)
         .attr("font-family", "Raleway");
 
-      svg.select(".y.axis")
+      barSvg.select(".y.axis")
         .style("font-size", "10px");
 
       // create svg groups ("g") and place them
-      var theater = svg.selectAll(".theater")
+      var theater = barSvg.selectAll(".theater")
         .data(data1)
         .enter().append("g")
         .attr("class", "theater")
@@ -304,7 +405,7 @@
         });
 
       // Position the legend elements
-      var legend = svg.selectAll(".legend")
+      var legend = barSvg.selectAll(".legend")
         .data(color.domain().slice().reverse())
         .enter().append("g")
         .attr("class", "legend")
@@ -337,8 +438,8 @@
         }
       }
 
-       d3.select("#selectField").on("change", handleChange);
-
+       d3.select("#selectField").on("change", handleChange);     
+       d3.select("#selectField").on("click", handleChange);       
       function handleChange() {
         // console.log(this.options[this.selectedIndex].value)
           var currentSeason = this.options[this.selectedIndex].value
@@ -346,14 +447,125 @@
           updatePie(currentSeason);
       }
 
-       // --------- PIE CHARTS ------------------------------------
+ // --------- BROADWAY BAR CHART ----------------------
+  y.domain(data5.map(function(d) { return d.show; }));
+  x.domain([0, d3.max(data5, function(d) { return d.total + 5; })]);
+
+  // X-axis
+  broadwayBarSvg.append("g")
+    .attr("class", "x axis")
+    .attr("transform", "translate(0," + height + ")")
+    .call(broadwayXAxis)
+    .append("text")
+    .text("Number of Actors")
+    .attr("x", width/2 -40)
+    .attr("y", 40)
+    .attr("font-family", "Raleway")
+    .style("font-size", 12);
+
+  // Y-axis
+  broadwayBarSvg.append("g")
+    .attr("class", "y axis")
+    .call(broadwayYAxis)
+    .selectAll(".tick text")
+    .append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("y", -150)
+    .attr("x", -120)
+    .attr("dy", ".71em")
+    .style("text-anchor", "end")
+    .text("Shows")
+    .attr("font-family", "Raleway");
+
+  broadwayBarSvg.select(".y.axis")
+    .style("font-size", "10px");
+
+  // create svg groups ("g") and place them
+  var show = broadwayBarSvg.selectAll(".show")
+    .data(data5)
+    .enter().append("g")
+    .attr("class", "show")
+    .attr("transform", function(d) { return "translate(0," + y(d.show) + ")"; });
+   
+ // draw the rects within the groups, add tooltips
+  var rect2 = show.selectAll("rect")
+    .data(function(d) { 
+      return d.numbers; 
+    })
+    .enter().append("rect")
+    .attr("height", y.rangeBand()) //height is now rangeband 
+    .attr("x", function(d) { return x(d.y0); }) 
+    .attr("width", function(d) { return x(d.y1) - x(d.y0); }) 
+    .style("fill", function(d) { return color(d.name); })
+    .attr("class", "show")
+    .on('mouseover', function(d){ 
+      percentTip.show(d);
+      d3.select(this).style("opacity", ".5")
+    })
+    .on('mouseout', function(d){ 
+      percentTip.hide(d);
+      d3.select(this).style("opacity", "1")
+    });
+
+  // Position the legend elements
+  var broadwayLegend = broadwayBarSvg.selectAll(".legend")
+    .data(broadwayColor.domain().slice().reverse())
+    .enter().append("g")
+    .attr("class", "broadwaylegend")
+    .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+  broadwayLegend.append("rect")
+    .attr("x", width + 95)
+    .attr("width", 18)
+    .attr("height", 18)
+    .style("fill", color);
+
+  broadwayLegend.append("text")
+    .attr("x", width + 90)
+    .attr("y", 9)
+    .attr("dy", ".35em")
+    .style("text-anchor", "end")
+    .text(function(d) { return d; })
+    .attr("font-family", "Raleway");
+
+
+  // // animation
+  // d3.selectAll("input").on("change", handleFormClick);
+
+
+  // function handleFormClick() {
+  //   if (this.value === "bypercent") {
+  //     transitionPercent();
+  //   } else {
+  //     transitionCount();
+  //   }
+  // }
+
+  //  d3.select("#selectField").on("change", handleChange);     
+  //  d3.select("#selectField").on("click", handleChange);       
+  // function handleChange() {
+  //   // console.log(this.options[this.selectedIndex].value)
+  //     var currentSeason = this.options[this.selectedIndex].value
+  //     console.log("handleChange", currentSeason)
+  //     updatePie(currentSeason);
+  // }
+
+
+
+
+
+// --------- PIE CHARTS ------------------------------------
       
-      var seasonChoice = document.getElementById('selectField');
-      var season = seasonChoice.options[seasonChoice.selectedIndex].value;
-      // var season2 = "2010-2011"
+      // var seasonChoice = document.getElementById('selectField');
+      // var season = seasonChoice.options[seasonChoice.selectedIndex].value;
+
+    //   var season = d3.select('#selectField').node().value;
+    //   console.log
+
+    //   // var season2 = "2010-2011"
 
     // function updatePie(season){
-    //   var svg2 = d3.select("body").selectAll(".pie")
+    //   var pieSvg = d3.select("body").selectAll(".pie")
     //     .data(data3)
     //   .enter().append("svg")
     //     .attr("class", "pie")
@@ -361,22 +573,26 @@
     //     .attr("height", radius * 2)
     //   .append("g")
     //     .attr("transform", "translate(" + radius + "," + radius + ")");
-
-    //     console.log(svg2);
+    //     // console.log(pieSvg);
    
-    //    svg2.selectAll(".arc")
+    //   var pieArcs = pieSvg.selectAll(".arc")
     //     .data(function(d) { 
     //       console.log(".arc", season);
     //       return pie(d.values[0][season].numbers);
     //       // return pie(d); 
     //     })
-    //   .enter().append("path")
+
+
+    //   pieArcs.enter().append("path")
     //     .attr("class", "arc")
     //     .attr("d", arc)
     //     .style("fill", function(d) { 
     //       return color(d.data.name); })
 
-    //   svg2.append("text")
+    //   pieArcs.exit().remove();
+
+
+    //   pieSvg.append("text")
     //       .attr("dy", ".35em")
     //       .style("text-anchor", "middle")
     //       .attr("font-family", "Raleway")
@@ -384,31 +600,30 @@
     //         // console.log(d.key);
     //         return d.key; });
     //       };
-          
-
+        
 
     //   console.log(season);
-      // updatePie(season);
+    //   updatePie(season);
 
    // ------  BAR CHART TRANSITIONS ---------------
       //transition to "percent" presentation
    function transitionPercent() {
       // reset the yscale domain to default
       x.domain([0, 1]);
-      var trans = svg.transition().duration(250); 
+      var trans = barSvg.transition().duration(250); 
       var theaters = trans.selectAll(".theater");
       theaters.selectAll("rect")
         .attr("x", function(d) { return x(d.yp0); })
         .attr("width", function(d) { return x(d.yp1) - x(d.yp0); });
         // change the y-axis, set the y axis tick format
       xAxis.tickFormat(d3.format(".0%"));
-      svg.selectAll(".x.axis").call(xAxis);
+      barSvg.selectAll(".x.axis").call(xAxis);
     }
     
     // transition to 'count' presentation
     function transitionCount() {
       x.domain([0, d3.max(data1, function(d) { return d.total; })]);
-      var transone = svg.transition()
+      var transone = barSvg.transition()
         .duration(250);
          // transition the bars (step one)
       var theatersone = transone.selectAll(".theater");
@@ -426,7 +641,7 @@
         .attr("x", function(d) { return x(d.y0); });
         // change the x-axis, set the x axis tick format
       xAxis.tickFormat(d3.format(".2s"));
-      svg.selectAll(".x.axis").call(xAxis);
+      barSvg.selectAll(".x.axis").call(xAxis);
     }
 
   };
