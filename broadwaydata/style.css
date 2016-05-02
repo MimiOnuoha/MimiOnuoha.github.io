@@ -43,10 +43,11 @@
     left: 0;
   }
   form {
-    position: absolute;
-    right: 750px;
-    top: 40px;
-  }
+    font-family: Raleway;
+    position: relative;
+    min-width: 100px;
+      }
+
   h2 {
    position:absolute;
    left: 140px;
@@ -58,4 +59,19 @@
 path:hover {
   stroke: #999;
   transition-delay: 0;
+}
+
+label {
+  margin: 0;
+  font-weight: lighter;
+}
+
+.year {
+  font-size: 2em;
+  font-family: Raleway;
+  color: #777;
+}
+
+h4{
+  margin-bottom: 0;
 }
