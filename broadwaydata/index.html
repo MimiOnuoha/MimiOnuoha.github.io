@@ -24,17 +24,31 @@
 </head>
 <body>
 
+<!-- Navigation Bar 
+  ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+<div class="band navigation">
+    <nav class="container primary">
+        <div class="sixteen columns">
+            <ul>
+                  <li><a href="#">About The Project</a></li>
+                <li><a href="#">Get The Data</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <div class="row">
  
-      <div class="one-half column" style="margin-top: 15%">
-          <h4> Non-Profit Theater Companies </h4>
+      <div class="one-half column" style="margin-top: 5%">
+          <h4> Off-Broadway Theater Companies </h4>
           <p class= "year"> 2014 - 2015 </p>
         <div id = "chart1"></div>
       </div>
-      <div class = "one column" style = "margin-top: 20%">
+      <div class = "three columns" style = "margin-top: 10%">
          <form >
             <label><input type="radio" name="mode" value="bypercent" > Percent</label>
             <label><input type="radio" name="mode" value="bycount" checked> Number of Actors</label>
@@ -151,7 +165,7 @@
       .attr('class', 'd3-tip')
       .offset([-10, 0])
       .html(function(d) {
-        return "<span style='color:white'> <STRONG>" + (d.y1- d.y0) + " actors </strong></span> (" + Math.floor((d.yp1 - d.yp0) * 100) + "%)";
+        return "<span style='color:white'> <STRONG>" + (d.y1- d.y0) + " actors </strong></span> (" + Math.round((d.yp1 - d.yp0) * 100) + "%)";
       })
 
     var barSvg = d3.select("#chart1").append("svg")
