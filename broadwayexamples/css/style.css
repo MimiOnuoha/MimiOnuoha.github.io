@@ -1,0 +1,151 @@
+  body {
+      font: 12px Fira Sans;
+      /*font-family: 12px 'Fira Sans', sans-serif;*/
+      font-weight: 300;
+  }
+  
+  #svg {
+      left: 10;
+  }
+  
+  .tooltip {
+      line-height: 1;
+      font-size: 1.2em;
+      /*font-weight: bold;*/
+      padding: 12px;
+      background: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      border-radius: 2px;
+  }
+  /* Creates a small triangle extender for the tooltip */
+  
+  .tooltip:after {
+      box-sizing: border-box;
+      display: inline;
+      font-size: 10px;
+      width: 100%;
+      line-height: 1;
+      color: rgba(0, 0, 0, 0.8);
+      content: "\25BC";
+      position: absolute;
+      text-align: center;
+  }
+  /* Style northward tooltips differently */
+  
+  .tooltip.n:after {
+      margin: -1px 0 0 0;
+      top: 100%;
+      left: 0;
+  }
+
+  .info-box {
+      line-height: 1;
+      padding: 12px;
+      background: rgba(220, 220, 220, 1);
+      min-width: 300px;
+      color: #000;
+      border-radius: 2px;  
+      font-size: 16px;  
+      position: absolute;
+      right: 50;
+  
+  #mainchart {
+      padding-left: 20px;
+  }
+  
+  .bodytext {
+      color: #777;
+  }
+  
+  .grid .tick {
+      stroke: lightgrey;
+      opacity: .1;
+  }
+  
+  .grid path {
+      stroke-width: 0;
+      opacity: .1;
+  }
+  
+  nav.primary {
+      display: table;
+      margin: 0 auto;
+  }
+  
+  nav.primary ul,
+  nav.primary ul li {
+      margin: 0px;
+  }
+  
+  nav.primary select {
+      display: none;
+      width: 100%;
+      height: 28px;
+      margin: 21px 0;
+  }
+  
+  nav.primary ul li a {
+      display: inline-block;
+      line-height: 49px;
+      padding: 0 14px;
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 0.08em;
+      background: #999999;
+  }
+  
+  nav.primary {
+      display: table;
+      margin: 0 auto;
+  }
+  
+  nav.primary ul,
+  nav.primary ul li {
+      margin: 0px;
+  }
+  
+  nav.primary select {
+      display: none;
+      width: 100%;
+      height: 28px;
+      margin: 21px 0;
+  }
+  
+  nav.primary ul li {
+      display: inline;
+      float: left;
+      position: relative;
+  }
+  
+  nav.primary ul li a {
+      display: inline-block;
+      line-height: 49px;
+      padding: 0 14px;
+      color: black;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 0.08em;
+      background: ##999999;
+      color: #999;
+  }
+  
+  nav.primary ul li a:hover {
+      background: #4BACC6;
+      cursor: pointer;
+      color: #fff;
+  }
+  
+  nav.primary ul li {
+      display: inline;
+      float: right;
+      position: relative;
+      color: #999;
+  }
+
+  label {
+    font-family: 12px 'Fira Sans', sans-serif;
+      font-weight: 300;
+  }

@@ -1,0 +1,718 @@
+show,year,ethnicity,actors
+Atlantic Theater Company,2006-2007,Caucasian,36
+Atlantic Theater Company,2006-2007,African American,2
+Atlantic Theater Company,2006-2007,Latino,0
+Atlantic Theater Company,2006-2007,Asian American,0
+Atlantic Theater Company,2006-2007,Other,0
+Atlantic Theater Company,2007-2008,Caucasian,35
+Atlantic Theater Company,2007-2008,African American,0
+Atlantic Theater Company,2007-2008,Latino,0
+Atlantic Theater Company,2007-2008,Asian American,0
+Atlantic Theater Company,2007-2008,Other,0
+Atlantic Theater Company,2008-2009,Caucasian,37
+Atlantic Theater Company,2008-2009,African American,2
+Atlantic Theater Company,2008-2009,Latino,2
+Atlantic Theater Company,2008-2009,Asian American,0
+Atlantic Theater Company,2008-2009,Other,0
+Atlantic Theater Company,2009-2010,Caucasian,28
+Atlantic Theater Company,2009-2010,African American,0
+Atlantic Theater Company,2009-2010,Latino,0
+Atlantic Theater Company,2009-2010,Asian American,0
+Atlantic Theater Company,2009-2010,Other,0
+Atlantic Theater Company,2010-2011,Caucasian,69
+Atlantic Theater Company,2010-2011,African American,8
+Atlantic Theater Company,2010-2011,Latino,0
+Atlantic Theater Company,2010-2011,Asian American,3
+Atlantic Theater Company,2010-2011,Other,0
+Atlantic Theater Company,2011-2012,Caucasian,31
+Atlantic Theater Company,2011-2012,African American,6
+Atlantic Theater Company,2011-2012,Latino,5
+Atlantic Theater Company,2011-2012,Asian American,2
+Atlantic Theater Company,2011-2012,Other,0
+Atlantic Theater Company,2012-2013,Caucasian,33
+Atlantic Theater Company,2012-2013,African American,6
+Atlantic Theater Company,2012-2013,Latino,1
+Atlantic Theater Company,2012-2013,Asian American,4
+Atlantic Theater Company,2012-2013,Other,0
+Atlantic Theater Company,2013-2014,Caucasian,31
+Atlantic Theater Company,2013-2014,African American,9
+Atlantic Theater Company,2013-2014,Latino,3
+Atlantic Theater Company,2013-2014,Asian American,1
+Atlantic Theater Company,2013-2014,Other,1
+Atlantic Theater Company,2014-2015,Caucasian,32
+Atlantic Theater Company,2014-2015,African American,2
+Atlantic Theater Company,2014-2015,Latino,0
+Atlantic Theater Company,2014-2015,Asian American,4
+Atlantic Theater Company,2014-2015,Other,1
+Classic Stage Company,2006-2007,Caucasian,20
+Classic Stage Company,2006-2007,African American,1
+Classic Stage Company,2006-2007,Latino,1
+Classic Stage Company,2006-2007,Asian American,1
+Classic Stage Company,2006-2007,Other,0
+Classic Stage Company,2007-2008,Caucasian,32
+Classic Stage Company,2007-2008,African American,3
+Classic Stage Company,2007-2008,Latino,1
+Classic Stage Company,2007-2008,Asian American,1
+Classic Stage Company,2007-2008,Other,3
+Classic Stage Company,2008-2009,Caucasian,32
+Classic Stage Company,2008-2009,African American,3
+Classic Stage Company,2008-2009,Latino,0
+Classic Stage Company,2008-2009,Asian American,4
+Classic Stage Company,2008-2009,Other,1
+Classic Stage Company,2009-2010,Caucasian,23
+Classic Stage Company,2009-2010,African American,2
+Classic Stage Company,2009-2010,Latino,3
+Classic Stage Company,2009-2010,Asian American,0
+Classic Stage Company,2009-2010,Other,0
+Classic Stage Company,2010-2011,Caucasian,49
+Classic Stage Company,2010-2011,African American,2
+Classic Stage Company,2010-2011,Latino,0
+Classic Stage Company,2010-2011,Asian American,1
+Classic Stage Company,2010-2011,Other,0
+Classic Stage Company,2011-2012,Caucasian,34
+Classic Stage Company,2011-2012,African American,0
+Classic Stage Company,2011-2012,Latino,0
+Classic Stage Company,2011-2012,Asian American,1
+Classic Stage Company,2011-2012,Other,0
+Classic Stage Company,2012-2013,Caucasian,32
+Classic Stage Company,2012-2013,African American,0
+Classic Stage Company,2012-2013,Latino,0
+Classic Stage Company,2012-2013,Asian American,1
+Classic Stage Company,2012-2013,Other,0
+Classic Stage Company,2013-2014,Caucasian,40
+Classic Stage Company,2013-2014,African American,4
+Classic Stage Company,2013-2014,Latino,2
+Classic Stage Company,2013-2014,Asian American,2
+Classic Stage Company,2013-2014,Other,0
+Classic Stage Company,2014-2015,Caucasian,46
+Classic Stage Company,2014-2015,African American,2
+Classic Stage Company,2014-2015,Latino,1
+Classic Stage Company,2014-2015,Asian American,1
+Classic Stage Company,2014-2015,Other,2
+Lincoln Center,2006-2007,Caucasian,17
+Lincoln Center,2006-2007,African American,1
+Lincoln Center,2006-2007,Latino,2
+Lincoln Center,2006-2007,Asian American,1
+Lincoln Center,2006-2007,Other,0
+Lincoln Center,2007-2008,Caucasian,7
+Lincoln Center,2007-2008,African American,0
+Lincoln Center,2007-2008,Latino,0
+Lincoln Center,2007-2008,Asian American,0
+Lincoln Center,2007-2008,Other,0
+Lincoln Center,2008-2009,Caucasian,23
+Lincoln Center,2008-2009,African American,3
+Lincoln Center,2008-2009,Latino,3
+Lincoln Center,2008-2009,Asian American,1
+Lincoln Center,2008-2009,Other,0
+Lincoln Center,2009-2010,Caucasian,18
+Lincoln Center,2009-2010,African American,8
+Lincoln Center,2009-2010,Latino,0
+Lincoln Center,2009-2010,Asian American,0
+Lincoln Center,2009-2010,Other,0
+Lincoln Center,2010-2011,Caucasian,24
+Lincoln Center,2010-2011,African American,10
+Lincoln Center,2010-2011,Latino,1
+Lincoln Center,2010-2011,Asian American,0
+Lincoln Center,2010-2011,Other,0
+Lincoln Center,2011-2012,Caucasian,36
+Lincoln Center,2011-2012,African American,1
+Lincoln Center,2011-2012,Latino,3
+Lincoln Center,2011-2012,Asian American,2
+Lincoln Center,2011-2012,Other,1
+Lincoln Center,2012-2013,Caucasian,34
+Lincoln Center,2012-2013,African American,8
+Lincoln Center,2012-2013,Latino,1
+Lincoln Center,2012-2013,Asian American,2
+Lincoln Center,2012-2013,Other,0
+Lincoln Center,2013-2014,Caucasian,63
+Lincoln Center,2013-2014,African American,8
+Lincoln Center,2013-2014,Latino,5
+Lincoln Center,2013-2014,Asian American,6
+Lincoln Center,2013-2014,Other,2
+Lincoln Center,2014-2015,Caucasian,20
+Lincoln Center,2014-2015,African American,8
+Lincoln Center,2014-2015,Latino,0
+Lincoln Center,2014-2015,Asian American,8
+Lincoln Center,2014-2015,Other,1
+MCC Theater,2006-2007,Caucasian,7
+MCC Theater,2006-2007,African American,0
+MCC Theater,2006-2007,Latino,0
+MCC Theater,2006-2007,Asian American,0
+MCC Theater,2006-2007,Other,1
+MCC Theater,2007-2008,Caucasian,9
+MCC Theater,2007-2008,African American,0
+MCC Theater,2007-2008,Latino,1
+MCC Theater,2007-2008,Asian American,1
+MCC Theater,2007-2008,Other,0
+MCC Theater,2008-2009,Caucasian,13
+MCC Theater,2008-2009,African American,0
+MCC Theater,2008-2009,Latino,1
+MCC Theater,2008-2009,Asian American,1
+MCC Theater,2008-2009,Other,0
+MCC Theater,2009-2010,Caucasian,14
+MCC Theater,2009-2010,African American,2
+MCC Theater,2009-2010,Latino,0
+MCC Theater,2009-2010,Asian American,0
+MCC Theater,2009-2010,Other,0
+MCC Theater,2010-2011,Caucasian,9
+MCC Theater,2010-2011,African American,1
+MCC Theater,2010-2011,Latino,0
+MCC Theater,2010-2011,Asian American,0
+MCC Theater,2010-2011,Other,0
+MCC Theater,2011-2012,Caucasian,25
+MCC Theater,2011-2012,African American,1
+MCC Theater,2011-2012,Latino,0
+MCC Theater,2011-2012,Asian American,0
+MCC Theater,2011-2012,Other,0
+MCC Theater,2012-2013,Caucasian,30
+MCC Theater,2012-2013,African American,7
+MCC Theater,2012-2013,Latino,1
+MCC Theater,2012-2013,Asian American,0
+MCC Theater,2012-2013,Other,0
+MCC Theater,2013-2014,Caucasian,23
+MCC Theater,2013-2014,African American,0
+MCC Theater,2013-2014,Latino,0
+MCC Theater,2013-2014,Asian American,0
+MCC Theater,2013-2014,Other,0
+MCC Theater,2014-2015,Caucasian,21
+MCC Theater,2014-2015,African American,0
+MCC Theater,2014-2015,Latino,0
+MCC Theater,2014-2015,Asian American,0
+MCC Theater,2014-2015,Other,0
+MTC,2006-2007,Caucasian,50
+MTC,2006-2007,African American,1
+MTC,2006-2007,Latino,0
+MTC,2006-2007,Asian American,1
+MTC,2006-2007,Other,1
+MTC,2007-2008,Caucasian,37
+MTC,2007-2008,African American,1
+MTC,2007-2008,Latino,0
+MTC,2007-2008,Asian American,1
+MTC,2007-2008,Other,0
+MTC,2008-2009,Caucasian,33
+MTC,2008-2009,African American,13
+MTC,2008-2009,Latino,2
+MTC,2008-2009,Asian American,0
+MTC,2008-2009,Other,0
+MTC,2009-2010,Caucasian,34
+MTC,2009-2010,African American,1
+MTC,2009-2010,Latino,0
+MTC,2009-2010,Asian American,0
+MTC,2009-2010,Other,0
+MTC,2010-2011,Caucasian,20
+MTC,2010-2011,African American,3
+MTC,2010-2011,Latino,0
+MTC,2010-2011,Asian American,0
+MTC,2010-2011,Other,0
+MTC,2011-2012,Caucasian,46
+MTC,2011-2012,African American,5
+MTC,2011-2012,Latino,2
+MTC,2011-2012,Asian American,1
+MTC,2011-2012,Other,0
+MTC,2012-2013,Caucasian,48
+MTC,2012-2013,African American,7
+MTC,2012-2013,Latino,1
+MTC,2012-2013,Asian American,0
+MTC,2012-2013,Other,1
+MTC,2013-2014,Caucasian,43
+MTC,2013-2014,African American,3
+MTC,2013-2014,Latino,0
+MTC,2013-2014,Asian American,0
+MTC,2013-2014,Other,0
+MTC,2014-2015,Caucasian,34
+MTC,2014-2015,African American,7
+MTC,2014-2015,Latino,0
+MTC,2014-2015,Asian American,6
+MTC,2014-2015,Other,0
+New York Theatre Workshop,2006-2007,Caucasian,19
+New York Theatre Workshop,2006-2007,African American,1
+New York Theatre Workshop,2006-2007,Latino,1
+New York Theatre Workshop,2006-2007,Asian American,0
+New York Theatre Workshop,2006-2007,Other,1
+New York Theatre Workshop,2007-2008,Caucasian,18
+New York Theatre Workshop,2007-2008,African American,7
+New York Theatre Workshop,2007-2008,Latino,3
+New York Theatre Workshop,2007-2008,Asian American,0
+New York Theatre Workshop,2007-2008,Other,0
+New York Theatre Workshop,2008-2009,Caucasian,7
+New York Theatre Workshop,2008-2009,African American,2
+New York Theatre Workshop,2008-2009,Latino,0
+New York Theatre Workshop,2008-2009,Asian American,2
+New York Theatre Workshop,2008-2009,Other,0
+New York Theatre Workshop,2009-2010,Caucasian,24
+New York Theatre Workshop,2009-2010,African American,3
+New York Theatre Workshop,2009-2010,Latino,0
+New York Theatre Workshop,2009-2010,Asian American,0
+New York Theatre Workshop,2009-2010,Other,10
+New York Theatre Workshop,2010-2011,Caucasian,23
+New York Theatre Workshop,2010-2011,African American,3
+New York Theatre Workshop,2010-2011,Latino,0
+New York Theatre Workshop,2010-2011,Asian American,1
+New York Theatre Workshop,2010-2011,Other,0
+New York Theatre Workshop,2011-2012,Caucasian,24
+New York Theatre Workshop,2011-2012,African American,1
+New York Theatre Workshop,2011-2012,Latino,1
+New York Theatre Workshop,2011-2012,Asian American,0
+New York Theatre Workshop,2011-2012,Other,6
+New York Theatre Workshop,2012-2013,Caucasian,9
+New York Theatre Workshop,2012-2013,African American,8
+New York Theatre Workshop,2012-2013,Latino,2
+New York Theatre Workshop,2012-2013,Asian American,0
+New York Theatre Workshop,2012-2013,Other,0
+New York Theatre Workshop,2013-2014,Caucasian,18
+New York Theatre Workshop,2013-2014,African American,12
+New York Theatre Workshop,2013-2014,Latino,1
+New York Theatre Workshop,2013-2014,Asian American,1
+New York Theatre Workshop,2013-2014,Other,0
+New York Theatre Workshop,2014-2015,Caucasian,8
+New York Theatre Workshop,2014-2015,African American,3
+New York Theatre Workshop,2014-2015,Latino,2
+New York Theatre Workshop,2014-2015,Asian American,2
+New York Theatre Workshop,2014-2015,Other,1
+Playwrights Horizons,2006-2007,Caucasian,29
+Playwrights Horizons,2006-2007,African American,4
+Playwrights Horizons,2006-2007,Latino,0
+Playwrights Horizons,2006-2007,Asian American,0
+Playwrights Horizons,2006-2007,Other,0
+Playwrights Horizons,2007-2008,Caucasian,36
+Playwrights Horizons,2007-2008,African American,3
+Playwrights Horizons,2007-2008,Latino,1
+Playwrights Horizons,2007-2008,Asian American,1
+Playwrights Horizons,2007-2008,Other,0
+Playwrights Horizons,2008-2009,Caucasian,25
+Playwrights Horizons,2008-2009,African American,8
+Playwrights Horizons,2008-2009,Latino,0
+Playwrights Horizons,2008-2009,Asian American,0
+Playwrights Horizons,2008-2009,Other,0
+Playwrights Horizons,2009-2010,Caucasian,31
+Playwrights Horizons,2009-2010,African American,7
+Playwrights Horizons,2009-2010,Latino,0
+Playwrights Horizons,2009-2010,Asian American,0
+Playwrights Horizons,2009-2010,Other,0
+Playwrights Horizons,2010-2011,Caucasian,40
+Playwrights Horizons,2010-2011,African American,1
+Playwrights Horizons,2010-2011,Latino,1
+Playwrights Horizons,2010-2011,Asian American,0
+Playwrights Horizons,2010-2011,Other,0
+Playwrights Horizons,2011-2012,Caucasian,26
+Playwrights Horizons,2011-2012,African American,8
+Playwrights Horizons,2011-2012,Latino,0
+Playwrights Horizons,2011-2012,Asian American,2
+Playwrights Horizons,2011-2012,Other,0
+Playwrights Horizons,2012-2013,Caucasian,34
+Playwrights Horizons,2012-2013,African American,9
+Playwrights Horizons,2012-2013,Latino,2
+Playwrights Horizons,2012-2013,Asian American,0
+Playwrights Horizons,2012-2013,Other,0
+Playwrights Horizons,2013-2014,Caucasian,33
+Playwrights Horizons,2013-2014,African American,3
+Playwrights Horizons,2013-2014,Latino,2
+Playwrights Horizons,2013-2014,Asian American,0
+Playwrights Horizons,2013-2014,Other,0
+Playwrights Horizons,2014-2015,Caucasian,24
+Playwrights Horizons,2014-2015,African American,9
+Playwrights Horizons,2014-2015,Latino,4
+Playwrights Horizons,2014-2015,Asian American,2
+Playwrights Horizons,2014-2015,Other,0
+Primary Stages,2006-2007,Caucasian,18
+Primary Stages,2006-2007,African American,0
+Primary Stages,2006-2007,Latino,0
+Primary Stages,2006-2007,Asian American,1
+Primary Stages,2006-2007,Other,0
+Primary Stages,2007-2008,Caucasian,20
+Primary Stages,2007-2008,African American,2
+Primary Stages,2007-2008,Latino,0
+Primary Stages,2007-2008,Asian American,1
+Primary Stages,2007-2008,Other,0
+Primary Stages,2008-2009,Caucasian,11
+Primary Stages,2008-2009,African American,2
+Primary Stages,2008-2009,Latino,2
+Primary Stages,2008-2009,Asian American,1
+Primary Stages,2008-2009,Other,0
+Primary Stages,2009-2010,Caucasian,10
+Primary Stages,2009-2010,African American,1
+Primary Stages,2009-2010,Latino,1
+Primary Stages,2009-2010,Asian American,0
+Primary Stages,2009-2010,Other,0
+Primary Stages,2010-2011,Caucasian,14
+Primary Stages,2010-2011,African American,3
+Primary Stages,2010-2011,Latino,0
+Primary Stages,2010-2011,Asian American,0
+Primary Stages,2010-2011,Other,0
+Primary Stages,2011-2012,Caucasian,17
+Primary Stages,2011-2012,African American,1
+Primary Stages,2011-2012,Latino,0
+Primary Stages,2011-2012,Asian American,0
+Primary Stages,2011-2012,Other,0
+Primary Stages,2012-2013,Caucasian,20
+Primary Stages,2012-2013,African American,3
+Primary Stages,2012-2013,Latino,0
+Primary Stages,2012-2013,Asian American,0
+Primary Stages,2012-2013,Other,0
+Primary Stages,2013-2014,Caucasian,21
+Primary Stages,2013-2014,African American,3
+Primary Stages,2013-2014,Latino,0
+Primary Stages,2013-2014,Asian American,0
+Primary Stages,2013-2014,Other,0
+Primary Stages,2014-2015,Caucasian,9
+Primary Stages,2014-2015,African American,7
+Primary Stages,2014-2015,Latino,0
+Primary Stages,2014-2015,Asian American,0
+Primary Stages,2014-2015,Other,0
+Public Theatre,2006-2007,Caucasian,63
+Public Theatre,2006-2007,African American,19
+Public Theatre,2006-2007,Latino,5
+Public Theatre,2006-2007,Asian American,8
+Public Theatre,2006-2007,Other,5
+Public Theatre,2007-2008,Caucasian,52
+Public Theatre,2007-2008,African American,13
+Public Theatre,2007-2008,Latino,2
+Public Theatre,2007-2008,Asian American,8
+Public Theatre,2007-2008,Other,1
+Public Theatre,2008-2009,Caucasian,70
+Public Theatre,2008-2009,African American,20
+Public Theatre,2008-2009,Latino,3
+Public Theatre,2008-2009,Asian American,3
+Public Theatre,2008-2009,Other,2
+Public Theatre,2009-2010,Caucasian,43
+Public Theatre,2009-2010,African American,19
+Public Theatre,2009-2010,Latino,7
+Public Theatre,2009-2010,Asian American,1
+Public Theatre,2009-2010,Other,1
+Public Theatre,2010-2011,Caucasian,83
+Public Theatre,2010-2011,African American,12
+Public Theatre,2010-2011,Latino,2
+Public Theatre,2010-2011,Asian American,6
+Public Theatre,2010-2011,Other,10
+Public Theatre,2011-2012,Caucasian,98
+Public Theatre,2011-2012,African American,20
+Public Theatre,2011-2012,Latino,5
+Public Theatre,2011-2012,Asian American,3
+Public Theatre,2011-2012,Other,4
+Public Theatre,2012-2013,Caucasian,76
+Public Theatre,2012-2013,African American,21
+Public Theatre,2012-2013,Latino,14
+Public Theatre,2012-2013,Asian American,15
+Public Theatre,2012-2013,Other,1
+Public Theatre,2013-2014,Caucasian,65
+Public Theatre,2013-2014,African American,5
+Public Theatre,2013-2014,Latino,4
+Public Theatre,2013-2014,Asian American,20
+Public Theatre,2013-2014,Other,1
+Public Theatre,2014-2015,Caucasian,37
+Public Theatre,2014-2015,African American,50
+Public Theatre,2014-2015,Latino,8
+Public Theatre,2014-2015,Asian American,3
+Public Theatre,2014-2015,Other,0
+Roundabout Theatre,2006-2007,Caucasian,57
+Roundabout Theatre,2006-2007,African American,7
+Roundabout Theatre,2006-2007,Latino,0
+Roundabout Theatre,2006-2007,Asian American,0
+Roundabout Theatre,2006-2007,Other,0
+Roundabout Theatre,2007-2008,Caucasian,71
+Roundabout Theatre,2007-2008,African American,10
+Roundabout Theatre,2007-2008,Latino,1
+Roundabout Theatre,2007-2008,Asian American,1
+Roundabout Theatre,2007-2008,Other,0
+Roundabout Theatre,2008-2009,Caucasian,86
+Roundabout Theatre,2008-2009,African American,9
+Roundabout Theatre,2008-2009,Latino,1
+Roundabout Theatre,2008-2009,Asian American,0
+Roundabout Theatre,2008-2009,Other,0
+Roundabout Theatre,2009-2010,Caucasian,75
+Roundabout Theatre,2009-2010,African American,4
+Roundabout Theatre,2009-2010,Latino,1
+Roundabout Theatre,2009-2010,Asian American,0
+Roundabout Theatre,2009-2010,Other,0
+Roundabout Theatre,2010-2011,Caucasian,88
+Roundabout Theatre,2010-2011,African American,3
+Roundabout Theatre,2010-2011,Latino,1
+Roundabout Theatre,2010-2011,Asian American,3
+Roundabout Theatre,2010-2011,Other,0
+Roundabout Theatre,2011-2012,Caucasian,46
+Roundabout Theatre,2011-2012,African American,3
+Roundabout Theatre,2011-2012,Latino,0
+Roundabout Theatre,2011-2012,Asian American,0
+Roundabout Theatre,2011-2012,Other,0
+Roundabout Theatre,2012-2013,Caucasian,103
+Roundabout Theatre,2012-2013,African American,3
+Roundabout Theatre,2012-2013,Latino,1
+Roundabout Theatre,2012-2013,Asian American,0
+Roundabout Theatre,2012-2013,Other,0
+Roundabout Theatre,2013-2014,Caucasian,69
+Roundabout Theatre,2013-2014,African American,6
+Roundabout Theatre,2013-2014,Latino,1
+Roundabout Theatre,2013-2014,Asian American,1
+Roundabout Theatre,2013-2014,Other,0
+Roundabout Theatre,2014-2015,Caucasian,70
+Roundabout Theatre,2014-2015,African American,9
+Roundabout Theatre,2014-2015,Latino,1
+Roundabout Theatre,2014-2015,Asian American,8
+Roundabout Theatre,2014-2015,Other,0
+Second Stage,2006-2007,Caucasian,34
+Second Stage,2006-2007,African American,1
+Second Stage,2006-2007,Latino,2
+Second Stage,2006-2007,Asian American,3
+Second Stage,2006-2007,Other,0
+Second Stage,2007-2008,Caucasian,37
+Second Stage,2007-2008,African American,0
+Second Stage,2007-2008,Latino,0
+Second Stage,2007-2008,Asian American,1
+Second Stage,2007-2008,Other,0
+Second Stage,2008-2009,Caucasian,26
+Second Stage,2008-2009,African American,6
+Second Stage,2008-2009,Latino,2
+Second Stage,2008-2009,Asian American,0
+Second Stage,2008-2009,Other,0
+Second Stage,2009-2010,Caucasian,13
+Second Stage,2009-2010,African American,3
+Second Stage,2009-2010,Latino,3
+Second Stage,2009-2010,Asian American,6
+Second Stage,2009-2010,Other,0
+Second Stage,2010-2011,Caucasian,22
+Second Stage,2010-2011,African American,5
+Second Stage,2010-2011,Latino,1
+Second Stage,2010-2011,Asian American,0
+Second Stage,2010-2011,Other,0
+Second Stage,2011-2012,Caucasian,34
+Second Stage,2011-2012,African American,1
+Second Stage,2011-2012,Latino,2
+Second Stage,2011-2012,Asian American,3
+Second Stage,2011-2012,Other,0
+Second Stage,2012-2013,Caucasian,18
+Second Stage,2012-2013,African American,2
+Second Stage,2012-2013,Latino,3
+Second Stage,2012-2013,Asian American,4
+Second Stage,2012-2013,Other,1
+Second Stage,2013-2014,Caucasian,23
+Second Stage,2013-2014,African American,3
+Second Stage,2013-2014,Latino,8
+Second Stage,2013-2014,Asian American,2
+Second Stage,2013-2014,Other,1
+Second Stage,2014-2015,Caucasian,15
+Second Stage,2014-2015,African American,11
+Second Stage,2014-2015,Latino,5
+Second Stage,2014-2015,Asian American,1
+Second Stage,2014-2015,Other,0
+Signature Theatre,2006-2007,Caucasian,0
+Signature Theatre,2006-2007,African American,20
+Signature Theatre,2006-2007,Latino,0
+Signature Theatre,2006-2007,Asian American,0
+Signature Theatre,2006-2007,Other,0
+Signature Theatre,2007-2008,Caucasian,12
+Signature Theatre,2007-2008,African American,6
+Signature Theatre,2007-2008,Latino,3
+Signature Theatre,2007-2008,Asian American,8
+Signature Theatre,2007-2008,Other,3
+Signature Theatre,2008-2009,Caucasian,2
+Signature Theatre,2008-2009,African American,24
+Signature Theatre,2008-2009,Latino,0
+Signature Theatre,2008-2009,Asian American,0
+Signature Theatre,2008-2009,Other,0
+Signature Theatre,2009-2010,Caucasian,17
+Signature Theatre,2009-2010,African American,5
+Signature Theatre,2009-2010,Latino,0
+Signature Theatre,2009-2010,Asian American,0
+Signature Theatre,2009-2010,Other,0
+Signature Theatre,2010-2011,Caucasian,15
+Signature Theatre,2010-2011,African American,1
+Signature Theatre,2010-2011,Latino,0
+Signature Theatre,2010-2011,Asian American,0
+Signature Theatre,2010-2011,Other,0
+Signature Theatre,2011-2012,Caucasian,15
+Signature Theatre,2011-2012,African American,13
+Signature Theatre,2011-2012,Latino,0
+Signature Theatre,2011-2012,Asian American,0
+Signature Theatre,2011-2012,Other,0
+Signature Theatre,2012-2013,Caucasian,16
+Signature Theatre,2012-2013,African American,8
+Signature Theatre,2012-2013,Latino,0
+Signature Theatre,2012-2013,Asian American,9
+Signature Theatre,2012-2013,Other,0
+Signature Theatre,2013-2014,Caucasian,28
+Signature Theatre,2013-2014,African American,8
+Signature Theatre,2013-2014,Latino,2
+Signature Theatre,2013-2014,Asian American,7
+Signature Theatre,2013-2014,Other,0
+Signature Theatre,2014-2015,Caucasian,37
+Signature Theatre,2014-2015,African American,29
+Signature Theatre,2014-2015,Latino,0
+Signature Theatre,2014-2015,Asian American,1
+Signature Theatre,2014-2015,Other,0
+The New Group,2006-2007,Caucasian,25
+The New Group,2006-2007,African American,0
+The New Group,2006-2007,Latino,0
+The New Group,2006-2007,Asian American,10
+The New Group,2006-2007,Other,0
+The New Group,2007-2008,Caucasian,22
+The New Group,2007-2008,African American,0
+The New Group,2007-2008,Latino,0
+The New Group,2007-2008,Asian American,0
+The New Group,2007-2008,Other,0
+The New Group,2008-2009,Caucasian,28
+The New Group,2008-2009,African American,2
+The New Group,2008-2009,Latino,1
+The New Group,2008-2009,Asian American,1
+The New Group,2008-2009,Other,0
+The New Group,2009-2010,Caucasian,20
+The New Group,2009-2010,African American,1
+The New Group,2009-2010,Latino,1
+The New Group,2009-2010,Asian American,0
+The New Group,2009-2010,Other,1
+The New Group,2010-2011,Caucasian,20
+The New Group,2010-2011,African American,1
+The New Group,2010-2011,Latino,1
+The New Group,2010-2011,Asian American,0
+The New Group,2010-2011,Other,1
+The New Group,2011-2012,Caucasian,23
+The New Group,2011-2012,African American,3
+The New Group,2011-2012,Latino,0
+The New Group,2011-2012,Asian American,0
+The New Group,2011-2012,Other,0
+The New Group,2012-2013,Caucasian,13
+The New Group,2012-2013,African American,0
+The New Group,2012-2013,Latino,1
+The New Group,2012-2013,Asian American,15
+The New Group,2012-2013,Other,0
+The New Group,2013-2014,Caucasian,11
+The New Group,2013-2014,African American,1
+The New Group,2013-2014,Latino,1
+The New Group,2013-2014,Asian American,0
+The New Group,2013-2014,Other,1
+The New Group,2014-2015,Caucasian,11
+The New Group,2014-2015,African American,2
+The New Group,2014-2015,Latino,0
+The New Group,2014-2015,Asian American,3
+The New Group,2014-2015,Other,0
+Theatre for a New Audience,2006-2007,Caucasian,23
+Theatre for a New Audience,2006-2007,African American,3
+Theatre for a New Audience,2006-2007,Latino,0
+Theatre for a New Audience,2006-2007,Asian American,1
+Theatre for a New Audience,2006-2007,Other,0
+Theatre for a New Audience,2007-2008,Caucasian,17
+Theatre for a New Audience,2007-2008,African American,18
+Theatre for a New Audience,2007-2008,Latino,0
+Theatre for a New Audience,2007-2008,Asian American,1
+Theatre for a New Audience,2007-2008,Other,0
+Theatre for a New Audience,2008-2009,Caucasian,28
+Theatre for a New Audience,2008-2009,African American,2
+Theatre for a New Audience,2008-2009,Latino,2
+Theatre for a New Audience,2008-2009,Asian American,1
+Theatre for a New Audience,2008-2009,Other,0
+Theatre for a New Audience,2009-2010,Caucasian,18
+Theatre for a New Audience,2009-2010,African American,1
+Theatre for a New Audience,2009-2010,Latino,1
+Theatre for a New Audience,2009-2010,Asian American,0
+Theatre for a New Audience,2009-2010,Other,0
+Theatre for a New Audience,2010-2011,Caucasian,33
+Theatre for a New Audience,2010-2011,African American,8
+Theatre for a New Audience,2010-2011,Latino,0
+Theatre for a New Audience,2010-2011,Asian American,0
+Theatre for a New Audience,2010-2011,Other,0
+Theatre for a New Audience,2011-2012,Caucasian,72
+Theatre for a New Audience,2011-2012,African American,8
+Theatre for a New Audience,2011-2012,Latino,3
+Theatre for a New Audience,2011-2012,Asian American,0
+Theatre for a New Audience,2011-2012,Other,0
+Theatre for a New Audience,2012-2013,Caucasian,23
+Theatre for a New Audience,2012-2013,African American,1
+Theatre for a New Audience,2012-2013,Latino,0
+Theatre for a New Audience,2012-2013,Asian American,0
+Theatre for a New Audience,2012-2013,Other,0
+Theatre for a New Audience,2013-2014,Caucasian,78
+Theatre for a New Audience,2013-2014,African American,16
+Theatre for a New Audience,2013-2014,Latino,1
+Theatre for a New Audience,2013-2014,Asian American,5
+Theatre for a New Audience,2013-2014,Other,0
+Theatre for a New Audience,2014-2015,Caucasian,23
+Theatre for a New Audience,2014-2015,African American,14
+Theatre for a New Audience,2014-2015,Latino,2
+Theatre for a New Audience,2014-2015,Asian American,2
+Theatre for a New Audience,2014-2015,Other,0
+Vineyard Theatre,2006-2007,Caucasian,23
+Vineyard Theatre,2006-2007,African American,2
+Vineyard Theatre,2006-2007,Latino,2
+Vineyard Theatre,2006-2007,Asian American,1
+Vineyard Theatre,2006-2007,Other,0
+Vineyard Theatre,2007-2008,Caucasian,16
+Vineyard Theatre,2007-2008,African American,0
+Vineyard Theatre,2007-2008,Latino,0
+Vineyard Theatre,2007-2008,Asian American,1
+Vineyard Theatre,2007-2008,Other,0
+Vineyard Theatre,2008-2009,Caucasian,15
+Vineyard Theatre,2008-2009,African American,9
+Vineyard Theatre,2008-2009,Latino,1
+Vineyard Theatre,2008-2009,Asian American,0
+Vineyard Theatre,2008-2009,Other,0
+Vineyard Theatre,2009-2010,Caucasian,10
+Vineyard Theatre,2009-2010,African American,13
+Vineyard Theatre,2009-2010,Latino,0
+Vineyard Theatre,2009-2010,Asian American,0
+Vineyard Theatre,2009-2010,Other,0
+Vineyard Theatre,2010-2011,Caucasian,17
+Vineyard Theatre,2010-2011,African American,0
+Vineyard Theatre,2010-2011,Latino,0
+Vineyard Theatre,2010-2011,Asian American,1
+Vineyard Theatre,2010-2011,Other,0
+Vineyard Theatre,2011-2012,Caucasian,10
+Vineyard Theatre,2011-2012,African American,2
+Vineyard Theatre,2011-2012,Latino,0
+Vineyard Theatre,2011-2012,Asian American,2
+Vineyard Theatre,2011-2012,Other,0
+Vineyard Theatre,2012-2013,Caucasian,18
+Vineyard Theatre,2012-2013,African American,0
+Vineyard Theatre,2012-2013,Latino,1
+Vineyard Theatre,2012-2013,Asian American,0
+Vineyard Theatre,2012-2013,Other,1
+Vineyard Theatre,2013-2014,Caucasian,12
+Vineyard Theatre,2013-2014,African American,0
+Vineyard Theatre,2013-2014,Latino,0
+Vineyard Theatre,2013-2014,Asian American,0
+Vineyard Theatre,2013-2014,Other,0
+Vineyard Theatre,2014-2015,Caucasian,15
+Vineyard Theatre,2014-2015,African American,4
+Vineyard Theatre,2014-2015,Latino,1
+Vineyard Theatre,2014-2015,Asian American,4
+Vineyard Theatre,2014-2015,Other,0
+York Theatre Company,2006-2007,Caucasian,11
+York Theatre Company,2006-2007,African American,1
+York Theatre Company,2006-2007,Latino,0
+York Theatre Company,2006-2007,Asian American,0
+York Theatre Company,2006-2007,Other,0
+York Theatre Company,2007-2008,Caucasian,0
+York Theatre Company,2007-2008,African American,0
+York Theatre Company,2007-2008,Latino,0
+York Theatre Company,2007-2008,Asian American,0
+York Theatre Company,2007-2008,Other,0
+York Theatre Company,2008-2009,Caucasian,31
+York Theatre Company,2008-2009,African American,1
+York Theatre Company,2008-2009,Latino,0
+York Theatre Company,2008-2009,Asian American,0
+York Theatre Company,2008-2009,Other,0
+York Theatre Company,2009-2010,Caucasian,11
+York Theatre Company,2009-2010,African American,8
+York Theatre Company,2009-2010,Latino,0
+York Theatre Company,2009-2010,Asian American,2
+York Theatre Company,2009-2010,Other,0
+York Theatre Company,2010-2011,Caucasian,9
+York Theatre Company,2010-2011,African American,0
+York Theatre Company,2010-2011,Latino,0
+York Theatre Company,2010-2011,Asian American,0
+York Theatre Company,2010-2011,Other,0
+York Theatre Company,2011-2012,Caucasian,11
+York Theatre Company,2011-2012,African American,0
+York Theatre Company,2011-2012,Latino,0
+York Theatre Company,2011-2012,Asian American,0
+York Theatre Company,2011-2012,Other,0
+York Theatre Company,2012-2013,Caucasian,3
+York Theatre Company,2012-2013,African American,0
+York Theatre Company,2012-2013,Latino,0
+York Theatre Company,2012-2013,Asian American,0
+York Theatre Company,2012-2013,Other,0
+York Theatre Company,2013-2014,Caucasian,10
+York Theatre Company,2013-2014,African American,9
+York Theatre Company,2013-2014,Latino,0
+York Theatre Company,2013-2014,Asian American,0
+York Theatre Company,2013-2014,Other,0
+York Theatre Company,2014-2015,Caucasian,7
+York Theatre Company,2014-2015,African American,1
