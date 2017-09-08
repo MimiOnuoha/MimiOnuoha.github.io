@@ -37,22 +37,6 @@ h1 {
   margin-top: 0;
   letter-spacing: .3rem;
 }
-#polina button { 
-  display: block;
-  width: 80%;
-  padding: .4rem;
-  border: none; 
-  margin: 1rem auto; 
-  font-size: 1.3rem;
-  background: rgba(255,255,255,0.23);
-  color: #fff;
-  border-radius: 3px; 
-  cursor: pointer;
-  transition: .3s background;
-}
-#polina button:hover { 
-   background: rgba(0,0,0,0.5);
-}
 
 a {
   display: inline-block;
@@ -64,6 +48,7 @@ a {
 }
 a:hover{
   background:rgba(0,0,0,0.9);
+  color: turquoise;
 }
 @media screen and (max-width: 500px) { 
   div{width:70%;} 
@@ -71,4 +56,18 @@ a:hover{
 @media screen and (max-device-width: 800px) {
   html { background: url(https://thenewcode.com/assets/images/polina.jpg) #000 no-repeat center center fixed; }
   #bgvid { display: none; }
+}
+
+.center-div
+{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  /*height: 1px;*/
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
 }
