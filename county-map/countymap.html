@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Texas Counties Map</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        path {
+            stroke: white;
+            stroke-width: 0.5;
+        }
+        .tooltip {
+            position: absolute;
+            text-align: center;
+            width: 80px;
+            height: 20px;
+            padding: 2px;
+            font: 12px sans-serif;
+            background: white;
+            border: 0px;
+            border-radius: 8px;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+<svg width="960" height="600"></svg>
+<script>
+    // Width and height
+    var width = 960,
+        height = 600;
+
+    // Create a projection
+    var projection = d3.geoAlbersUsa()
+        .translate([width / 2, height / 2])
+	.scale(1000);
+
+    // Create a path generator
+    var path = d3.geoPath()
+        .projection(projection);
+
+    // Select the SVG element
+    var svg = d3.select("svg");
+
+    // Load the GeoJSON data
+    d3.json("us-counties.json").then(function(tx) {
+        svg.selectAll("path")
+            .data(tx.features)
+            .enter()
+            .append("path")
+            .attr("d", path)
+            .attr("fill", "gray")
+            .attr("stroke", "white")
+
+        // Optional: Add a tooltip
+        var tooltip = d3.select("body").append("div")
+            .attr("class", "tooltip")
+            .style("visibility", "hidden");
+
+        svg.selectAll("path")
+            .on("mouseover", function(event, d) {
+	        d3.select(this).attr("fill", "steelblue");
+                tooltip.html(d.properties.NAME)
+                    .style("visibility", "visible");
+            })
+            .on("mousemove", function(event) {
+                tooltip.style("top", (event.pageY - 5) + "px")
+                    .style("left", (event.pageX + 5) + "px");
+            })
+            .on("mouseout", function() {
+	        d3.select(this).attr("fill", "gray");
+                tooltip.style("visibility", "hidden");
+            });
+    });
+</script>
+</body>
